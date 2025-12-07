@@ -1,0 +1,101 @@
+Role,Experience_Years,Salary_INR_LPA,Location,Tech_Stack,Employment_Type
+QA Engineer,13,23,Noida,"Rust, WebAssembly",Full-Time
+Mobile App Developer,8,32,Noida,"Flutter, React Native",Full-Time
+Senior Software Engineer,5,18,Mumbai,"Python, ML",Full-Time
+Security Engineer,14,8,Kochi,"React, TypeScript",Full-Time
+DevOps Engineer,5,35,Gurgaon,"TensorFlow, PyTorch",Full-Time
+Backend Developer,11,15,Jaipur,"Figma, Adobe XD",Full-Time
+QA Engineer,10,14,Kochi,"Java, Spring",Full-Time
+Backend Developer,6,12,Noida,"Java, Spring",Full-Time
+Data Scientist,5,15,Chennai,"Java, Spring",Full-Time
+AI Engineer,12,16,Hyderabad,"Flutter, React Native",Full-Time
+QA Engineer,12,40,Hyderabad,"Figma, Adobe XD",Full-Time
+Security Engineer,9,34,Hyderabad,"Flutter, React Native",Full-Time
+Frontend Developer,4,25,Mumbai,"Figma, Adobe XD",Full-Time
+Frontend Developer,6,31,Chennai,"Java, Spring",Full-Time
+QA Engineer,10,27,Noida,"Java, Spring",Full-Time
+Backend Developer,5,26,Noida,"AWS, Docker, Kubernetes",Full-Time
+UI/UX Designer,7,24,Jaipur,"React, TypeScript",Full-Time
+Cloud Architect,14,6,Noida,"GCP, BigQuery",Full-Time
+Security Engineer,1,35,Gurgaon,"Java, Spring",Full-Time
+QA Engineer,13,31,Gurgaon,"React, TypeScript",Full-Time
+Scrum Master,2,20,Hyderabad,"React, TypeScript",Full-Time
+UI/UX Designer,9,23,Jaipur,"Selenium, Appium",Full-Time
+Software Engineer,7,32,Bangalore,"Rust, WebAssembly",Full-Time
+Mobile App Developer,14,37,Noida,"Azure, Terraform",Full-Time
+Project Manager,8,39,Bangalore,"Flutter, React Native",Full-Time
+Frontend Developer,6,34,Pune,"Java, Spring",Full-Time
+Security Engineer,12,23,Ahmedabad,"React, TypeScript",Full-Time
+Frontend Developer,11,25,Gurgaon,"TensorFlow, PyTorch",Full-Time
+UI/UX Designer,4,28,Hyderabad,"AWS, Docker, Kubernetes",Full-Time
+UI/UX Designer,6,27,Pune,"TensorFlow, PyTorch",Full-Time
+Mobile App Developer,6,34,Pune,"Flutter, React Native",Full-Time
+QA Engineer,5,38,Mumbai,"Figma, Adobe XD",Full-Time
+AI Engineer,3,18,Noida,"AWS, Docker, Kubernetes",Full-Time
+Frontend Developer,1,15,Chennai,"Rust, WebAssembly",Full-Time
+Security Engineer,3,19,Noida,"Python, ML",Full-Time
+AI Engineer,15,12,Pune,"Java, Spring",Full-Time
+Security Engineer,4,14,Jaipur,"Go, Microservices",Full-Time
+Software Engineer,8,10,Chennai,"React, TypeScript",Full-Time
+AI Engineer,10,17,Ahmedabad,"Go, Microservices",Full-Time
+AI Engineer,15,29,Chennai,"GCP, BigQuery",Full-Time
+AI Engineer,2,21,Kochi,"Go, Microservices",Full-Time
+Senior Software Engineer,14,17,Noida,"Python, ML",Full-Time
+Data Scientist,15,7,Noida,"Azure, Terraform",Full-Time
+Software Engineer,15,12,Mumbai,"AWS, Docker, Kubernetes",Full-Time
+UI/UX Designer,9,20,Noida,"Figma, Adobe XD",Full-Time
+QA Engineer,9,17,Jaipur,"AWS, Docker, Kubernetes",Full-Time
+Mobile App Developer,1,40,Bangalore,"Azure, Terraform",Full-Time
+QA Engineer,2,4,Kochi,"GCP, BigQuery",Full-Time
+Project Manager,9,39,Pune,"AWS, Docker, Kubernetes",Full-Time
+Senior Software Engineer,2,13,Jaipur,"Figma, Adobe XD",Full-Time
+Scrum Master,4,23,Chennai,"Java, Spring",Full-Time
+Mobile App Developer,5,40,Hyderabad,"Node.js, AWS",Full-Time
+Backend Developer,5,8,Mumbai,"GCP, BigQuery",Full-Time
+AI Engineer,4,35,Gurgaon,"Rust, WebAssembly",Full-Time
+Project Manager,2,22,Hyderabad,"Java, Spring",Full-Time
+Mobile App Developer,7,15,Gurgaon,"Java, Spring",Full-Time
+AI Engineer,9,40,Gurgaon,"Flutter, React Native",Full-Time
+Software Engineer,4,33,Gurgaon,"Azure, Terraform",Full-Time
+Software Engineer,8,34,Chennai,"Go, Microservices",Full-Time
+AI Engineer,2,40,Mumbai,"Figma, Adobe XD",Full-Time
+QA Engineer,13,11,Gurgaon,"Flutter, React Native",Full-Time
+Senior Software Engineer,13,40,Noida,"Figma, Adobe XD",Full-Time
+AI Engineer,6,35,Pune,"Azure, Terraform",Full-Time
+Mobile App Developer,10,28,Chennai,"React, TypeScript",Full-Time
+Senior Software Engineer,3,38,Gurgaon,"Selenium, Appium",Full-Time
+Project Manager,6,35,Bangalore,"Azure, Terraform",Full-Time
+DevOps Engineer,6,17,Jaipur,"Rust, WebAssembly",Full-Time
+Senior Software Engineer,3,38,Pune,"React, TypeScript",Full-Time
+Data Scientist,10,12,Jaipur,"AWS, Docker, Kubernetes",Full-Time
+Scrum Master,11,21,Kochi,"Figma, Adobe XD",Full-Time
+DevOps Engineer,11,4,Ahmedabad,"Flutter, React Native",Full-Time
+UI/UX Designer,8,11,Jaipur,"Azure, Terraform",Full-Time
+DevOps Engineer,2,36,Bangalore,"AWS, Docker, Kubernetes",Full-Time
+Data Scientist,2,19,Mumbai,"Rust, WebAssembly",Full-Time
+DevOps Engineer,6,8,Jaipur,"TensorFlow, PyTorch",Full-Time
+Mobile App Developer,12,15,Mumbai,"TensorFlow, PyTorch",Full-Time
+QA Engineer,9,33,Noida,"Figma, Adobe XD",Full-Time
+QA Engineer,15,15,Mumbai,"GCP, BigQuery",Full-Time
+Scrum Master,14,24,Bangalore,"TensorFlow, PyTorch",Full-Time
+Senior Software Engineer,5,16,Gurgaon,"Figma, Adobe XD",Full-Time
+AI Engineer,1,30,Chennai,"Selenium, Appium",Full-Time
+Scrum Master,8,25,Ahmedabad,"Figma, Adobe XD",Full-Time
+Backend Developer,13,25,Pune,"Java, Spring",Full-Time
+Project Manager,15,21,Ahmedabad,"Rust, WebAssembly",Full-Time
+Frontend Developer,5,23,Gurgaon,"Azure, Terraform",Full-Time
+Frontend Developer,11,30,Ahmedabad,"TensorFlow, PyTorch",Full-Time
+UI/UX Designer,4,9,Noida,"React, TypeScript",Full-Time
+Project Manager,7,13,Hyderabad,"Flutter, React Native",Full-Time
+AI Engineer,3,35,Chennai,"Go, Microservices",Full-Time
+Cloud Architect,10,40,Kochi,"Selenium, Appium",Full-Time
+AI Engineer,15,31,Jaipur,"Node.js, AWS",Full-Time
+AI Engineer,12,25,Chennai,"Rust, WebAssembly",Full-Time
+Mobile App Developer,5,15,Mumbai,"Azure, Terraform",Full-Time
+Scrum Master,9,16,Jaipur,"TensorFlow, PyTorch",Full-Time
+UI/UX Designer,1,9,Pune,"Rust, WebAssembly",Full-Time
+UI/UX Designer,14,25,Gurgaon,"Azure, Terraform",Full-Time
+Scrum Master,12,14,Hyderabad,"React, TypeScript",Full-Time
+DevOps Engineer,3,19,Ahmedabad,"AWS, Docker, Kubernetes",Full-Time
+Cloud Architect,5,30,Hyderabad,"Go, Microservices",Full-Time
+Senior Software Engineer,10,10,Ahmedabad,"TensorFlow, PyTorch",Full-Time
