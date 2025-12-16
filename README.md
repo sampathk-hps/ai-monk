@@ -16,3 +16,5 @@ uv add package-name - Add new package
 uv remove package-name - Remove package
 
 uv run python script.py - Run with uv environment
+
+uv run python -m folder_name.file_name - Run with uv environment as a module
