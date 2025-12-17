@@ -19,18 +19,11 @@ def _retrieve_context(query: str):
     return retrieved_docs
 
 def _get_prompt_message(content: str, query: str) -> str:
-    try:
-        with open(PROMPT_DIR, 'r') as f:
-            template_content = f.read()
-        prompt_template = ChatPromptTemplate.from_template(template_content)
-        messages = prompt_template.format(context=content, question=query)
-        return messages
-    except FileNotFoundError:
-        logging.error(f"Prompt file not found: {PROMPT_DIR}")
-        raise
-    except Exception as e:
-        logging.error(f"Error reading prompt file: {e}")
-        raise
+    with open(PROMPT_DIR, 'r') as f:
+        template_content = f.read()
+    prompt_template = ChatPromptTemplate.from_template(template_content)
+    messages = prompt_template.format(context=content, question=query)
+    return messages
     
 def _generate_answer(state: AssistantState):
     docs_content = ""
@@ -42,26 +35,33 @@ def _generate_answer(state: AssistantState):
     messages = _get_prompt_message(docs_content, state["question"])
 
     response = get_llm().invoke(messages)
-    file_names = [f for f in list(set(file_names)) if f is not None]
+    file_names = list(set(file_names))
     return {"answer": response.content, "files": file_names}
 
 
 if __name__ == "__main__":
     while True:
-        query = input("User> ").strip()
-        if not query or query.lower() in {"exit", "quit", "bye"}:
-            break
-        state = AssistantState(
-            question=query,
-            context=_retrieve_context(query),
-            answer="",
-            files=[]
-        )
-        result = _generate_answer(state)
-        
-        print("\nAnswer:")
-        print(result["answer"])
-        print("\nSource Files:")
-        for file in result["files"]:
-            print(file)
-        print("=====================================")
+        try:
+            query = input("User> ").strip()
+            if not query or query.lower() in {"exit", "quit", "bye"}:
+                break
+            
+            state = AssistantState(
+                question=query,
+                context=_retrieve_context(query),
+                answer="",
+                files=[]
+            )
+            result = _generate_answer(state)
+            
+            print("\nAnswer:")
+            print(result["answer"])
+            print("\nSource Files:")
+            for file in result["files"]:
+                print(file)
+            print("=====================================")
+            
+        except Exception as e:
+            logging.error(f"Error processing query: {e}")
+            print(f"An error occurred: {e}")
+            print("Please try again.")
