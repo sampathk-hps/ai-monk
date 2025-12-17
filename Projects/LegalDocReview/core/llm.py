@@ -1,6 +1,8 @@
-from dotenv import load_dotenv
-from langchain_nvidia_ai_endpoints import ChatNVIDIA
 from constants.constants import MODEL
+
+from dotenv import load_dotenv
+
+from langchain_nvidia_ai_endpoints import ChatNVIDIA
 
 load_dotenv()
 

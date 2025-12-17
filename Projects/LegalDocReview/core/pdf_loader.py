@@ -1,5 +1,4 @@
 from langchain_community.document_loaders import PyPDFDirectoryLoader
-from pathlib import Path
 from constants.constants import DATA_DIR
 
 _loader = PyPDFDirectoryLoader(path=DATA_DIR)
