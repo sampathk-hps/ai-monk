@@ -7,7 +7,7 @@ import logging
 
 load_dotenv()
 
-_llm = ChatNVIDIA(model=MODEL, verbose=True)
+_llm = ChatNVIDIA(model=MODEL, temperature=0.2, verbose=True)
 
 def get_llm():
     return _llm
