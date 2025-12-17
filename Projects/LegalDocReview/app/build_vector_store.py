@@ -3,6 +3,8 @@ from core.embeddings import get_embeddings
 from constants.constants import FAISS_DIR
 
 from typing import List
+from pathlib import Path
+import logging
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
@@ -13,16 +15,6 @@ _text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=1
 
 _embeddings = get_embeddings()
 
-# vector_store = FAISS.from_documents(split_docs, embeddings)
-# vector_store.save_local(FAISS_DIR)
-# print(f"Vector store saved to {FAISS_DIR}")
-
-# if __name__ == "__main__":
-#     vector_store = FAISS.from_documents(split_docs, embeddings)
-#     vector_store.save_local(FAISS_DIR)
-#     print(f"Vector store saved to {FAISS_DIR}")
-
-
 def _load_documents() -> List[Document]:
     updated_docs: list[Document] = []
     
@@ -30,28 +22,30 @@ def _load_documents() -> List[Document]:
 
     # Handle the case where no documents are found
     if not docs:
-        print("No documents found.")
+        logging.error("No documents found.")
         return []
     
     split_docs = _text_splitter.split_documents(docs)
-    print(f"Split into {len(split_docs)} chunks of text.")
+    logging.info(f"Split into {len(split_docs)} chunks of text.")
 
     for i, doc in enumerate(split_docs):
         doc.metadata["chunk_id"] = i
-        file_name = doc.metadata.get("source", "unknown").split("/")[-1]
+        file_name = Path(doc.metadata.get("source", "Unknown")).name
         doc.metadata["file_name"] = file_name
         updated_docs.append(doc)
     
     return updated_docs
 
 def build_faiss(docs: List[Document]):
+    logging.basicConfig(level=logging.INFO)
     FAISS_DIR.mkdir(parents=True, exist_ok=True)
     vector_store = FAISS.from_documents(docs, _embeddings)
     vector_store.save_local(str(FAISS_DIR))
-    print(f"Saved FAISS index at: {FAISS_DIR.resolve()}")
+    logging.info(f"Saved FAISS index at: {FAISS_DIR.resolve()}")
 
 if __name__ == "__main__":
     docs = _load_documents()
-    if len(docs) == 0 or not any(docs):
-        raise SystemExit(f"No docs found in data directory.")
+    if not docs:
+        logging.error("No docs found in data directory.")
+        raise SystemExit(1)
     build_faiss(docs)

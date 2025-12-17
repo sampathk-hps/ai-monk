@@ -6,6 +6,7 @@ from typing_extensions import List, TypedDict
 
 from langchain_core.documents import Document
 from langchain_core.prompts import ChatPromptTemplate
+import logging
 
 class AssistantState(TypedDict):
     question: str
@@ -18,21 +19,30 @@ def _retrieve_context(query: str):
     return retrieved_docs
 
 def _get_prompt_message(content: str, query: str) -> str:
-    prompt_template = ChatPromptTemplate.from_template(open(PROMPT_DIR).read())
-    messages = prompt_template.format(context=content, question=query)
-    return messages
+    try:
+        with open(PROMPT_DIR, 'r') as f:
+            template_content = f.read()
+        prompt_template = ChatPromptTemplate.from_template(template_content)
+        messages = prompt_template.format(context=content, question=query)
+        return messages
+    except FileNotFoundError:
+        logging.error(f"Prompt file not found: {PROMPT_DIR}")
+        raise
+    except Exception as e:
+        logging.error(f"Error reading prompt file: {e}")
+        raise
     
 def _generate_answer(state: AssistantState):
     docs_content = ""
     file_names = []
     for doc in state["context"]:
         docs_content += doc.page_content + "\n\n"
-        file_names.append(doc.metadata.get("file_name"))
+        file_names.append(doc.metadata.get("file_name", "Unknown"))
 
     messages = _get_prompt_message(docs_content, state["question"])
 
     response = get_llm().invoke(messages)
-    file_names = list(set(file_names))
+    file_names = [f for f in list(set(file_names)) if f is not None]
     return {"answer": response.content, "files": file_names}
 
 
@@ -43,8 +53,10 @@ if __name__ == "__main__":
             break
         state = AssistantState(
             question=query,
-            context=_retrieve_context(query)
-            )
+            context=_retrieve_context(query),
+            answer="",
+            files=[]
+        )
         result = _generate_answer(state)
         
         print("\nAnswer:")
@@ -53,4 +65,3 @@ if __name__ == "__main__":
         for file in result["files"]:
             print(file)
         print("=====================================")
-

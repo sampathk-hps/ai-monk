@@ -1,17 +1,23 @@
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 from constants.constants import DATA_DIR
+import logging
 
 _loader = PyPDFDirectoryLoader(path=DATA_DIR)
 
 def get_docs():
     try:
         docs = _loader.load()
-        print(f"Loaded {len(docs)} documents from {DATA_DIR}")
+        logging.info(f"Loaded {len(docs)} documents from {DATA_DIR}")
         return docs
     except Exception as e:
-        print(f"Error loading PDFs: {e}")
-        print(f"Looking for PDFs in: {DATA_DIR}")
-        print(f"Directory exists: {DATA_DIR.exists()}")
+        logging.error(f"Error loading PDFs: {e}")
+        logging.error(f"Looking for PDFs in: {DATA_DIR}")
+        logging.error(f"Directory exists: {DATA_DIR.exists()}")
+        return []
 
 if __name__ == "__main__":
-    print(f"Total pages: {len(_loader.load())}")
+    try:
+        docs = get_docs()
+        print(f"Total pages: {len(docs)}")
+    except Exception as e:
+        logging.error(f"Error in main: {e}")
