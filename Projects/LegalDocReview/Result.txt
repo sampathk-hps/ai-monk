@@ -1,0 +1,81 @@
+LegalDocReview> % uv run python -m app.main
+
+User> what are the exclusions from confidentials information?
+Found 2 results for vector search.
+**Direct Answer**: 
+The exclusions from Confidential Information are listed in Section 4 of the document and include:
+
+* Information that is or becomes publicly available without breach of this Agreement.
+* Information lawfully received from a third party without restriction.
+* Information independently developed without use of Confidential Information.
+
+**Additional Context**: 
+These exclusions outline specific scenarios under which information shared between parties does not fall under the definition of Confidential Information, thereby not being subject to the confidentiality obligations set forth in the agreement.
+
+Source Files:
+Non_Disclosure_Agreement_Long_Form.pdf
+=====================================
+User> What are the terms for termination?
+Found 2 results for vector search.
+**Direct Answer**: The terms for termination are outlined in sections 7.2, 7.3, and 7.4, which state that the agreement may be terminated:
+
+* With thirty (30) days' prior written notice to the other party (Section 7.2 is not explicitly provided, but section 7.3 implies a preceding section that discusses termination with notice).
+* Immediately if the other party materially breaches this Agreement and fails to cure such breach within fifteen (15) days after receiving written notice (Section 7.3).
+* Immediately if either party becomes insolvent, files for bankruptcy, or ceases business operations (Section 7.4).
+
+**Additional Context**: Upon termination, specific provisions shall survive, including those relating to confidentiality, intellectual property, limitation of liability, and governing law, as stated in Section 7.5.
+
+Source Files:
+Service_Agreement.pdf
+=====================================
+User> What is the duration of the confidentiality obligation?
+Found 2 results for vector search.
+**Direct Answer**: The Receiving Party's obligation to protect Confidential Information shall continue for a period of five (5) years from the date of disclosure of such Confidential Information (Section 7.2).
+
+**Additional Context**: However, if the Confidential Information qualifies as a trade secret under applicable law, it shall be protected for as long as it remains a trade secret, regardless of the expiration or termination of this Agreement (Section 7.3).
+
+Source Files:
+Non_Disclosure_Agreement_Long_Form.pdf
+=====================================
+User> Generate a summary for a licensing contract to understand key obligations and payment structures.
+Found 2 results for vector search.
+**Direct Answer:**
+The Licensing Agreement outlines the terms under which the Licensor grants the Licensee the right to use specified intellectual property. Key obligations of the Licensee include:
+
+* Using the licensed materials within the permitted scope
+* Complying with usage restrictions
+* Protecting the Licensor's intellectual property rights
+* Maintaining confidentiality
+* Making timely payment of licensing fees
+* Accurately reporting usage or revenue
+* Complying with quality standards
+* Adhering to termination and audit provisions
+
+The payment structure typically consists of:
+
+* An upfront license fee
+* Recurring royalty payments based on usage or revenue
+
+**Additional Context:**
+The Licensing Agreement also outlines the obligations of the Licensor, which include granting access to the licensed rights, maintaining ownership of the intellectual property, and refraining from interfering with authorized use. The agreement also includes detailed provisions on standard licensing practices, compliance obligations, risk allocation, enforcement mechanisms, dispute resolution, indemnification, limitation of liability, governing law, assignment restrictions, and force majeure. These provisions aim to provide legal clarity, reduce ambiguity, and ensure the agreement remains enforceable across multiple jurisdictions. (Sections 52 and 53 of the Licensing Agreement provide further details on these provisions.)
+
+Source Files:
+Licensing_Contract_With_Summary.pdf
+=====================================
+
+User> What is langchain?
+Found 2 results for vector search.
+
+Answer:
+**Direct Answer**: I don't have enough context to answer your query. Please provide more specific information or relevant document sections regarding "langchain" as it is not mentioned in the provided context.
+
+**Additional Context**: The provided context appears to relate to a legal agreement, discussing provisions and their applicability across jurisdictions, but it does not mention "langchain" or provide any information that could be used to infer its meaning or relevance to the agreement.
+
+Source Files:
+Non_Disclosure_Agreement_Long_Form.pdf
+Licensing_Contract_With_Summary.pdf
+=====================================
+
+User> bye
+
+LegalDocReview> %
