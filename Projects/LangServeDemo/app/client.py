@@ -52,8 +52,8 @@ def main():
         
     except Exception as e:
         duration = time.time() - start_time
-        logger.error(f"Request failed after {duration:.2f}s: {e}")
-        logger.error(f"Make sure server is running on {server_url}")
+        logger.error(f"Request failed after {duration:.2f}s")
+        logger.error(f"Error: {e}")
 
 if __name__ == "__main__":
     main()
