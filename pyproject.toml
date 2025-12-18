@@ -16,4 +16,5 @@ dependencies = [
 members = [
     "Projects/LegalDocReview",
     "Projects/CleanArchitecture",
+    "Projects/LangServeDemo",
 ]

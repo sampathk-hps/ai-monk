@@ -1,0 +1,13 @@
+[project]
+name = "langservedemo"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11.14"
+dependencies = [
+    "fastapi>=0.125.0",
+    "langchain>=1.2.0",
+    "langchain-nvidia-ai-endpoints>=1.0.0",
+    "langserve>=0.3.3",
+    "sse-starlette>=3.0.4",
+    "uvicorn>=0.38.0",
+]
