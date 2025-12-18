@@ -2,16 +2,27 @@
 
 A production-ready demonstration of LangChain and LangServe integration, featuring a joke generator API with input validation, error handling, and structured logging.
 
+**Important:** RemoteRunnable is deprecated and no longer supported in LangChain v1. This project includes both legacy and modern implementations using RemoteGraph with LangGraph.
+
 ## Components
 
 ```
 LangServeDemo/
 ├── app/
-│   └── client.py          # Client application with logging and error handling
+│   ├── cli.py            # CLI interface
+│   └── client.py         # Client with logging and error handling
 ├── core/
-│   └── llm.py            # LLM configuration and initialization
+│   ├── llm.py            # LLM configuration
+│   └── service.py        # Service layer
 ├── servers/
-│   └── server.py         # FastAPI server with production features
+│   ├── nodes/
+│   │   └── process_joke_node.py  # LangGraph node
+│   ├── schema/
+│   │   └── joke_input.py         # Input schema
+│   ├── state/
+│   │   └── joke_state.py         # State definition
+│   ├── server.py         # Legacy server (RemoteRunnable - deprecated)
+│   └── server_new.py     # Modern server (LangGraph + RemoteGraph)
 ├── constants/
 │   └── constants.py      # Application constants
 ├── prompts/
@@ -44,6 +55,13 @@ PORT=8080
 ## Running the Demo
 
 ### Start the Server
+
+**Recommended (LangGraph):**
+```bash
+uv run python -m servers.server_new
+```
+
+**Legacy (Deprecated):**
 ```bash
 uv run python -m servers.server
 ```
@@ -87,9 +105,18 @@ http://localhost:8000/
 
 This demo showcases production-ready LangChain and LangServe patterns:
 
+### Legacy Implementation (server.py)
 - **Chains**: Input validator → Prompt template → LLM → Output parser
+- **Client**: RemoteRunnable (deprecated in LangChain v1)
+
+### Modern Implementation (server_new.py)
+- **Graph**: LangGraph with StateGraph for workflow management
+- **Type Safety**: Pydantic schemas for input/state validation
+- **Nodes**: Modular processing with process_joke_node
+- **Client**: RemoteGraph for LangGraph compatibility
+
+### Common Features
 - **Deployment**: FastAPI server with LangServe integration
-- **Client**: RemoteRunnable with error handling and logging
 - **Configuration**: Environment-based configuration management
 - **Validation**: Input validation and error handling throughout the pipeline
 
