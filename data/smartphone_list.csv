@@ -1,0 +1,121 @@
+Brand,Model,Price_INR,RAM,Storage,Battery_mAh,Display_Size_Inches,Processor,Operating_System,User_Rating
+Xiaomi,Xiaomi Lite 16,39140,4 GB,256 GB,3996,6.73,Snapdragon 7s Gen 2,iOS 16,4.3
+Xiaomi,Xiaomi Prime 9,31610,4 GB,512 GB,5602,6.34,Exynos 2200,iOS 17,4.0
+Oppo,Oppo Lite 3,104115,4 GB,512 GB,4511,6.72,MediaTek Dimensity 8200,Android 13,4.6
+OnePlus,OnePlus Prime 2,19542,6 GB,256 GB,5190,6.42,Snapdragon 8 Gen 2,iOS 16,3.8
+Samsung,Samsung GT 12,128410,6 GB,128 GB,4397,6.74,Snapdragon 8 Gen 2,Android 13,4.6
+Xiaomi,Xiaomi Prime 4,85137,6 GB,256 GB,3584,6.54,MediaTek Dimensity 8200,Android 14,4.5
+Realme,Realme Plus 10,80358,8 GB,512 GB,4434,6.82,Snapdragon 888,Android 14,4.3
+OnePlus,OnePlus Flip 1,135873,8 GB,512 GB,4355,6.52,Apple A16,Android 13,4.2
+Xiaomi,Xiaomi FE 13,137777,12 GB,64 GB,4985,6.85,Snapdragon 888,Android 13,4.2
+Apple,Apple R 6,43548,4 GB,512 GB,5582,6.42,Snapdragon 888,Android 14,4.6
+Realme,Realme GT 16,74310,4 GB,64 GB,4896,6.64,Tensor G3,Android 13,4.3
+Realme,Realme Note 18,78851,8 GB,64 GB,5861,6.55,Snapdragon 888,Android 14,4.5
+Google,Google Ultra 8,29286,16 GB,256 GB,4730,6.62,MediaTek Dimensity 8200,iOS 16,4.2
+Google,Google Ultra 6,90906,4 GB,512 GB,5431,6.12,Snapdragon 8 Gen 2,Android 14,4.6
+Nothing,Nothing Edge 1,100843,12 GB,64 GB,3508,6.16,Apple A17 Pro,Android 14,4.2
+Apple,Apple Pro Max 15,14615,16 GB,256 GB,5535,6.14,MediaTek Dimensity 8200,iOS 16,4.5
+Nothing,Nothing Neo 17,30194,6 GB,64 GB,5825,6.63,Apple A16,Android 14,4.3
+Samsung,Samsung Note 12,13339,4 GB,64 GB,3666,6.11,Dimensity 6100+,iOS 16,4.5
+Apple,Apple GT 17,24905,4 GB,512 GB,5781,6.64,Dimensity 6100+,Android 14,4.5
+Realme,Realme FE 8,94875,4 GB,256 GB,4471,6.13,Apple A16,iOS 16,4.5
+Realme,Realme Lite 1,144142,8 GB,64 GB,4891,6.68,Apple A17 Pro,Android 13,4.0
+Samsung,Samsung Edge 3,106597,8 GB,64 GB,4303,6.7,Apple A16,Android 14,3.8
+Nothing,Nothing Lite 19,99085,16 GB,64 GB,3752,6.49,Snapdragon 7s Gen 2,iOS 16,4.0
+Xiaomi,Xiaomi Prime 7,118672,16 GB,256 GB,3962,6.13,Apple A17 Pro,Android 14,4.2
+Oppo,Oppo FE 3,22633,6 GB,256 GB,4346,6.38,Snapdragon 8 Gen 2,iOS 16,3.8
+Vivo,Vivo GT 3,68545,12 GB,128 GB,4107,6.41,Tensor G3,iOS 16,4.6
+Nothing,Nothing Neo 19,100830,12 GB,512 GB,4607,6.84,Snapdragon 888,iOS 17,4.5
+Realme,Realme Pro Max 9,45109,4 GB,128 GB,5139,6.66,Apple A17 Pro,iOS 16,4.7
+Vivo,Vivo Fold 2,32889,4 GB,256 GB,5841,6.78,Apple A17 Pro,iOS 16,4.5
+Samsung,Samsung Edge 7,21756,4 GB,512 GB,4729,6.86,Snapdragon 7s Gen 2,iOS 17,4.0
+Google,Google Neo 3,99810,6 GB,128 GB,5560,6.14,Snapdragon 7s Gen 2,iOS 16,4.0
+Apple,Apple SE 18,50130,6 GB,512 GB,3795,6.83,MediaTek Dimensity 8200,Android 14,4.6
+Samsung,Samsung Ultra 7,110116,4 GB,512 GB,5296,6.22,Snapdragon 888,Android 14,4.7
+Motorola,Motorola Flip 7,44446,16 GB,128 GB,5233,6.11,Snapdragon 7s Gen 2,iOS 16,3.8
+Oppo,Oppo SE 2,50456,4 GB,64 GB,4500,6.89,Apple A17 Pro,iOS 16,4.3
+OnePlus,OnePlus Ultra 16,9874,8 GB,256 GB,4083,6.18,Tensor G3,Android 14,4.5
+Xiaomi,Xiaomi X 15,16297,16 GB,512 GB,3831,6.5,Apple A17 Pro,iOS 17,4.0
+Xiaomi,Xiaomi X 9,96283,6 GB,512 GB,5591,6.3,Apple A16,iOS 16,3.8
+Nothing,Nothing X 1,118486,12 GB,256 GB,4933,6.77,Apple A16,Android 13,4.5
+Apple,Apple Lite 11,122609,12 GB,512 GB,4546,6.58,MediaTek Dimensity 8200,iOS 16,4.5
+Samsung,Samsung R 9,82599,4 GB,256 GB,4398,6.63,Dimensity 6100+,iOS 16,4.0
+Google,Google FE 8,81408,4 GB,512 GB,3842,6.16,Snapdragon 8 Gen 2,iOS 17,4.2
+Nothing,Nothing Lite 3,122774,6 GB,256 GB,3656,6.53,Snapdragon 8 Gen 2,iOS 16,3.8
+Google,Google R 9,58000,8 GB,256 GB,5444,6.89,Apple A16,Android 14,4.7
+Google,Google Plus 5,23451,8 GB,512 GB,5630,6.21,Tensor G3,Android 13,4.7
+Realme,Realme FE 9,12065,16 GB,64 GB,3929,6.29,Snapdragon 7s Gen 2,iOS 16,4.5
+Xiaomi,Xiaomi Prime 2,123605,16 GB,64 GB,4305,6.25,Snapdragon 8 Gen 2,iOS 16,4.2
+Vivo,Vivo Flip 7,18085,16 GB,256 GB,3779,6.39,Dimensity 6100+,Android 14,4.5
+Samsung,Samsung R 15,141938,12 GB,256 GB,3660,6.45,Snapdragon 8 Gen 2,Android 13,4.0
+Oppo,Oppo SE 19,10601,8 GB,256 GB,5505,6.51,Dimensity 6100+,Android 14,4.3
+Xiaomi,Xiaomi Fold 2,140880,8 GB,512 GB,3574,6.25,Apple A17 Pro,Android 14,4.2
+Realme,Realme Pro Max 14,24302,12 GB,128 GB,5045,6.88,Snapdragon 888,iOS 16,4.5
+Samsung,Samsung Plus 15,89870,6 GB,256 GB,3774,6.9,MediaTek Dimensity 8200,Android 13,4.7
+Xiaomi,Xiaomi GT 19,48058,4 GB,256 GB,4967,6.73,Tensor G3,Android 13,4.3
+Nothing,Nothing Prime 2,135172,12 GB,128 GB,5686,6.43,Snapdragon 8 Gen 2,Android 14,4.0
+OnePlus,OnePlus R 6,56928,16 GB,128 GB,4284,6.23,Dimensity 6100+,iOS 16,4.7
+Oppo,Oppo Neo 6,16186,16 GB,256 GB,5777,6.32,Apple A17 Pro,Android 14,4.7
+Google,Google SE 11,85573,16 GB,128 GB,5012,6.89,MediaTek Dimensity 8200,iOS 17,4.7
+Samsung,Samsung Fold 9,32460,4 GB,64 GB,3943,6.59,Apple A17 Pro,iOS 17,4.0
+Samsung,Samsung Prime 1,40607,16 GB,512 GB,5638,6.38,Snapdragon 7s Gen 2,Android 14,4.2
+Apple,Apple Note 20,81962,6 GB,256 GB,4799,6.67,Dimensity 6100+,iOS 17,4.6
+Xiaomi,Xiaomi Fold 7,37429,12 GB,128 GB,3730,6.33,Tensor G3,Android 13,4.6
+Realme,Realme Neo 2,137785,12 GB,512 GB,4797,6.67,Snapdragon 7s Gen 2,iOS 17,4.3
+Nothing,Nothing Prime 9,141652,16 GB,512 GB,4541,6.4,Snapdragon 7s Gen 2,Android 14,3.8
+Xiaomi,Xiaomi Prime 8,34989,16 GB,512 GB,5402,6.72,Dimensity 6100+,iOS 17,4.2
+Oppo,Oppo GT 5,69298,6 GB,256 GB,4022,6.84,Snapdragon 888,iOS 17,4.3
+OnePlus,OnePlus Plus 12,35901,6 GB,256 GB,4339,6.77,Exynos 2200,iOS 16,4.0
+Motorola,Motorola Flip 13,135596,16 GB,512 GB,4868,6.53,MediaTek Dimensity 8200,iOS 17,4.3
+Oppo,Oppo SE 19,148151,6 GB,512 GB,4838,6.82,Dimensity 6100+,iOS 16,4.5
+Xiaomi,Xiaomi Fold 7,111420,6 GB,128 GB,3813,6.76,MediaTek Dimensity 8200,iOS 16,4.2
+Realme,Realme Prime 6,103529,16 GB,512 GB,4285,6.13,Snapdragon 888,Android 13,4.7
+Apple,Apple Lite 7,93435,6 GB,128 GB,4823,6.32,Dimensity 6100+,Android 13,4.0
+Oppo,Oppo Lite 16,36371,16 GB,128 GB,3949,6.33,Tensor G3,iOS 16,3.8
+Motorola,Motorola R 4,83858,4 GB,64 GB,3876,6.8,MediaTek Dimensity 8200,iOS 17,4.2
+Nothing,Nothing Flip 12,107696,12 GB,64 GB,5398,6.4,Apple A17 Pro,Android 14,4.5
+Google,Google Lite 20,23724,4 GB,256 GB,4561,6.22,Snapdragon 8 Gen 2,iOS 17,4.7
+Nothing,Nothing FE 17,98184,12 GB,512 GB,3861,6.27,Apple A17 Pro,iOS 17,4.5
+Realme,Realme Ultra 14,96351,4 GB,64 GB,5839,6.41,Apple A16,Android 14,4.7
+Oppo,Oppo SE 15,94248,6 GB,512 GB,5791,6.65,Apple A16,Android 13,4.3
+Realme,Realme Prime 7,67333,16 GB,256 GB,5562,6.17,Snapdragon 7s Gen 2,iOS 17,4.0
+Apple,Apple FE 7,82530,12 GB,64 GB,3696,6.63,Apple A17 Pro,iOS 16,4.2
+Nothing,Nothing Lite 8,63481,6 GB,256 GB,3794,6.31,Snapdragon 888,iOS 17,4.7
+Vivo,Vivo Plus 17,103591,4 GB,256 GB,5175,6.3,Snapdragon 7s Gen 2,Android 13,4.2
+Oppo,Oppo Neo 20,74090,12 GB,128 GB,4895,6.56,Dimensity 6100+,iOS 17,4.7
+Oppo,Oppo Ultra 9,72675,8 GB,128 GB,5597,6.55,Snapdragon 7s Gen 2,iOS 16,4.6
+Realme,Realme Lite 18,138054,16 GB,128 GB,4160,6.53,MediaTek Dimensity 8200,iOS 17,4.7
+Xiaomi,Xiaomi GT 20,113768,12 GB,64 GB,5789,6.65,Snapdragon 888,iOS 17,3.8
+Vivo,Vivo Edge 2,133451,8 GB,128 GB,5620,6.45,Dimensity 6100+,iOS 17,4.0
+Realme,Realme X 7,91587,6 GB,512 GB,3992,6.22,Snapdragon 7s Gen 2,iOS 17,4.5
+Google,Google Ultra 5,136573,8 GB,256 GB,5460,6.14,Snapdragon 888,iOS 16,4.3
+Realme,Realme R 20,103616,8 GB,512 GB,5207,6.25,Apple A17 Pro,Android 14,4.7
+Samsung,Samsung Edge 16,70916,6 GB,256 GB,4504,6.53,Apple A16,iOS 17,4.7
+Apple,Apple SE 14,22628,16 GB,256 GB,4402,6.42,Dimensity 6100+,iOS 17,4.6
+Xiaomi,Xiaomi FE 20,120349,4 GB,64 GB,6000,6.6,Apple A16,Android 13,4.2
+Realme,Realme Note 11,97279,4 GB,64 GB,5532,6.65,MediaTek Dimensity 8200,iOS 17,4.6
+Samsung,Samsung GT 3,19074,6 GB,512 GB,4171,6.8,Apple A16,Android 13,4.6
+Google,Google Note 18,146475,12 GB,64 GB,5374,6.46,Snapdragon 7s Gen 2,iOS 16,4.2
+Oppo,Oppo FE 19,95580,16 GB,128 GB,5211,6.64,Dimensity 6100+,iOS 17,3.8
+Motorola,Motorola Note 13,70723,12 GB,128 GB,5045,6.8,Exynos 2200,Android 14,4.3
+Oppo,Oppo Edge 3,22246,12 GB,128 GB,3549,6.29,Apple A16,Android 14,3.8
+Oppo,Oppo Fold 16,50333,4 GB,128 GB,5232,6.28,Snapdragon 888,Android 14,4.7
+Nothing,Nothing Lite 3,129556,8 GB,64 GB,5534,6.19,Apple A17 Pro,iOS 16,4.7
+OnePlus,OnePlus SE 3,133019,4 GB,256 GB,4511,6.79,MediaTek Dimensity 8200,Android 13,4.5
+Realme,Realme Lite 14,28339,8 GB,512 GB,3968,6.56,Snapdragon 7s Gen 2,Android 14,4.0
+Nothing,Nothing Lite 6,16208,12 GB,128 GB,4599,6.62,Snapdragon 8 Gen 2,iOS 17,3.8
+Motorola,Motorola Flip 1,142666,4 GB,128 GB,5016,6.49,MediaTek Dimensity 8200,iOS 16,4.3
+Realme,Realme R 17,32599,6 GB,256 GB,4192,6.55,Snapdragon 8 Gen 2,Android 13,4.7
+Nothing,Nothing SE 17,28079,6 GB,128 GB,3949,6.12,MediaTek Dimensity 8200,Android 13,4.7
+Realme,Realme Pro Max 4,100087,12 GB,64 GB,3647,6.87,MediaTek Dimensity 8200,iOS 16,4.3
+Motorola,Motorola Flip 18,57147,12 GB,256 GB,5233,6.45,Dimensity 6100+,Android 13,4.2
+Nothing,Nothing SE 2,45161,4 GB,64 GB,5091,6.31,Apple A17 Pro,Android 14,4.5
+Apple,Apple Edge 19,70283,12 GB,128 GB,5979,6.29,Snapdragon 7s Gen 2,Android 14,4.0
+Samsung,Samsung Fold 10,43397,8 GB,64 GB,3614,6.23,Tensor G3,Android 13,4.5
+Oppo,Oppo Flip 10,113625,12 GB,512 GB,3551,6.15,Apple A17 Pro,iOS 16,4.0
+Nothing,Nothing Flip 14,138171,6 GB,512 GB,4946,6.34,Snapdragon 7s Gen 2,Android 13,4.7
+Xiaomi,Xiaomi Fold 9,118999,6 GB,512 GB,5285,6.78,Dimensity 6100+,iOS 17,4.5
+Motorola,Motorola SE 19,10224,4 GB,256 GB,4696,6.45,Apple A17 Pro,iOS 16,4.2
+Xiaomi,Xiaomi X 11,123241,12 GB,512 GB,5544,6.38,Snapdragon 7s Gen 2,Android 14,4.6
+Realme,Realme Lite 10,62278,8 GB,64 GB,5541,6.84,Snapdragon 7s Gen 2,iOS 17,4.2
+Apple,Apple Note 11,20525,6 GB,256 GB,5123,6.53,Tensor G3,Android 13,4.3

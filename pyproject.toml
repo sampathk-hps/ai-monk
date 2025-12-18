@@ -1,0 +1,20 @@
+[project]
+name = "ai-monk"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11.14"
+dependencies = [
+    "langchain>=1.2.0",
+    "langchain-community>=0.4.1",
+    "langchain-nvidia-ai-endpoints>=1.0.0",
+    "pypdf>=6.4.2",
+    "python-dotenv>=1.2.1",
+    "unstructured>=0.18.21",
+]
+
+[tool.uv.workspace]
+members = [
+    "Projects/LegalDocReview",
+    "Projects/CleanArchitecture",
+    "Projects/LangServeDemo",
+]

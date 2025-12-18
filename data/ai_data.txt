@@ -1,0 +1,21 @@
+
+Page 1: Introduction to Artificial Intelligence
+Artificial Intelligence (AI) is the field of computer science focused on creating machines that can perform tasks that normally require human intelligence. 
+These tasks include understanding language, recognizing images, making decisions, and solving complex problems. 
+AI has grown rapidly due to the explosion of data, better algorithms, and powerful computing hardware. 
+Today, AI is used in voice assistants, search engines, navigation apps, fraud detection systems, and medical diagnosis tools. 
+The main goal of AI is to build systems that can adapt, learn, and improve without being explicitly programmed for every scenario.
+
+Page 2: How AI Learns and Makes Decisions
+AI systems learn through data. Machine Learning, a branch of AI, allows computers to find patterns inside large datasets. 
+For example, an AI that identifies cats in photos is trained using thousands of labeled images. Over time, it understands the patterns—shapes, colors, textures—that define a cat. 
+Deep Learning, an advanced type of machine learning, uses neural networks inspired by the human brain. These networks can analyze huge amounts of information, detect subtle patterns, and make predictions with high accuracy. 
+AI models improve as they receive more diverse and high‑quality data. However, they are only as good as the data they learn from. Poor data leads to poor decisions.
+
+Page 3: The Future of AI and Its Impact
+AI will influence every industry—healthcare, finance, transportation, retail, entertainment, and education. 
+Self-driving cars will reduce traffic accidents. AI doctors will assist human doctors in diagnosing illnesses earlier. 
+Businesses will use AI to automate routine tasks, allowing employees to focus on creative and strategic work. 
+At the same time, AI raises concerns about privacy, job displacement, and ethical decision‑making. 
+The future of AI depends on responsible development, transparent systems, and laws that protect people while encouraging innovation. 
+If used wisely, AI can boost global productivity, improve quality of life, and unlock ideas that were once impossible.
