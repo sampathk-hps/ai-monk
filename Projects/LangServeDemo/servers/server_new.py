@@ -4,7 +4,6 @@
 from servers.state.joke_state import JokeState
 from servers.schema.joke_input import JokeInput
 from servers.nodes.process_joke_node import process_joke
-from servers.nodes.request_validator_node import request_validator
 
 from langgraph.graph import StateGraph, START, END
 
@@ -24,11 +23,9 @@ def _create_joke_graph():
         # Create the workflow graph
         graph = StateGraph(JokeState)
 
-        graph.add_node("validator_node", request_validator)
         graph.add_node("generate_joke", process_joke)
         
-        graph.add_edge(START, "validator_node")
-        graph.add_edge("validator_node", "generate_joke")
+        graph.add_edge(START, "generate_joke")
         graph.add_edge("generate_joke", END)
         
         compiled_graph = graph.compile()
