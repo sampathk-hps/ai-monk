@@ -2,8 +2,8 @@ from core.pdf_loader import get_pdf_content
 from core.docx_loader import get_docx_content
 from core.txt_loader import get_txt_content
 from core.llm import get_llm
-from constants.constants import PROMPT_DIR
-from core.chroma_db_handler import store_content
+from constants.constants import PROMPT_DIR, PROMPT_QUERY_DIR
+from core.chroma_db_handler import store_content, query_analysis
 
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -58,6 +58,15 @@ def _get_prompt_template() -> PromptTemplate:
     )
     return prompt_template
 
+def _get_query_prompt_template() -> PromptTemplate:
+    with open(PROMPT_QUERY_DIR, 'r') as f:
+        template_content = f.read()
+    prompt_template = PromptTemplate(
+        input_variables=["job_requirements", "resume_text", "analysis_data", "query"],
+        template=template_content
+    )
+    return prompt_template
+
 def start_analysis(job_requirements: str, resume_text: str) -> str:
     llm = get_llm()
     prompt_template = _get_prompt_template()
@@ -74,6 +83,24 @@ def start_analysis(job_requirements: str, resume_text: str) -> str:
     })
 
     return analysis
+
+def get_answer(query: str, jobReq: str, resume: str) -> str:
+    llm = get_llm()
+    prompt_template = _get_query_prompt_template()
+    
+    chain = prompt_template | llm | StrOutputParser()
+
+    docs = query_analysis(query=query)
+    analysis = "\n\n".join([doc.page_content for doc in docs])
+    logging.info(f"Analysis Data from VectorDB: {analysis}")
+
+    response = chain.invoke(input={
+        "job_requirements": jobReq,
+        "resume_text": resume,
+        "analysis_data": analysis,
+        "query": query
+    })
+    return response
 
 
 def streamlit_app():
@@ -96,25 +123,50 @@ def streamlit_app():
                 st.error("Failed to extract content from resume")
                 return
 
-            with st.expander("View Resume Content"):
-                st.text(resume_content)
-            
             analysis = start_analysis(job_requirements, resume_content)
-
-            st.header("AI Analysis")
-            st.markdown(analysis)
-
-            # Extract and display the suitability score
-            suitability_score = extract_suitability_score(analysis)
-            if suitability_score is not None:
-                st.metric(label="Resume Suitability Score", value=f"{suitability_score}%")
-            else:
-                st.warning("Analysis Done.")
-
+            
+            st.session_state.analysis = analysis
+            st.session_state.resume_content = resume_content
+            st.session_state.job_requirements = job_requirements
+            st.session_state.messages = []
             store_content(resume_content, os.path.splitext(uploaded_file.name)[0])
-            st.success("Analysis stored in vector database.")
 
-            st.download_button("Download Analysis", analysis, file_name="resume_analysis.txt")
+    if "analysis" in st.session_state and uploaded_file:
+        with st.expander("View Resume Content"):
+            st.text(st.session_state.resume_content)
+        
+        st.header("AI Analysis")
+        st.markdown(st.session_state.analysis)
+
+        suitability_score = extract_suitability_score(st.session_state.analysis)
+        if suitability_score is not None:
+            st.metric(label="Resume Suitability Score", value=f"{suitability_score}%")
+        else:
+            st.warning("Analysis Done.")
+
+        st.success("Analysis stored in vector database.")
+        st.download_button("Download Analysis", st.session_state.analysis, file_name="resume_analysis.txt")
+
+        # Chat interface
+        st.header("Chat about the Analysis")
+        
+        if "messages" not in st.session_state:
+            st.session_state.messages = []
+        
+        for message in st.session_state.messages:
+            with st.chat_message(message["role"]):
+                st.markdown(message["content"])
+        
+        prompt = st.chat_input("Ask questions about the resume analysis...")
+        if prompt:
+            st.session_state.messages.append({"role": "user", "content": prompt})
+            with st.chat_message("user"):
+                st.markdown(prompt)
+            
+            with st.chat_message("assistant"):
+                response = get_answer(query=prompt, jobReq=st.session_state.job_requirements, resume=st.session_state.resume_content)
+                st.markdown(response)
+                st.session_state.messages.append({"role": "assistant", "content": response})
 
 
 if __name__ == "__main__":
