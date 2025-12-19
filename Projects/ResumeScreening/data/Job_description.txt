@@ -1,0 +1,35 @@
+Job Title
+Full Stack Developer (MERN Stack)
+Job Summary
+We are looking for a highly skilled Full Stack Developer with strong experience in building scalable web applications using the MERN stack (MongoDB, Express, React, Node.js). The ideal candidate has hands-on experience in frontend and backend development, cloud deployment, real-time systems, and database design. This role requires end-to-end ownership of features, from UI to deployment.
+Key Responsibilities
+Design, develop, and maintain full-stack web applications using React.js and Node.js
+Build and consume RESTful APIs for seamless frontend–backend integration
+Implement real-time features using Firebase and cloud-based services
+Develop scalable backend services with Express, Django, or Flask
+Design and manage databases using MongoDB and PostgreSQL
+Containerize applications using Docker and manage source control with Git
+Deploy and monitor applications on AWS and cloud platforms
+Collaborate with cross-functional teams to deliver high-quality software solutions
+Ensure application performance, security, and scalability
+Required Skills
+Languages: JavaScript, Python, SQL
+Frontend: React.js, Tailwind CSS
+Backend: Node.js, Express, Django, Flask
+Databases: MongoDB, PostgreSQL
+Cloud & DevOps: AWS, Docker, Firebase
+Version Control: Git
+Strong understanding of MVC architecture, REST APIs, and database normalization
+Preferred Qualifications
+Experience building AI-powered applications using external APIs
+Familiarity with NLP-based systems and automation tools
+Exposure to DevOps fundamentals and CI/CD pipelines
+Ability to translate business requirements into technical solutions
+Education
+Bachelor’s degree in Information Technology / Computer Science or related field
+Why This Role Is a Perfect Fit
+Hands-on MERN stack project experience
+Proven ability to build real-time, cloud-deployed applications
+Strong background in full-stack development and system design
+Experience with AI-integrated web applications
+Demonstrated excellence through hackathons, certifications, and awards
