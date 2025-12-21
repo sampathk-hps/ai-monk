@@ -15,7 +15,7 @@ dependencies = [
 [tool.uv.workspace]
 members = [
     "Projects/LegalDocReview",
-    "Projects/CleanArchitecture",
-    "Projects/LangServeDemo",
+    "Learnings/CleanArchitecture",
+    "Learnings/LangServeDemo",
     "Projects/ResumeScreening",
 ]

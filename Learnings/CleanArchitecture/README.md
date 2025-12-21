@@ -7,5 +7,7 @@ LegalDocReview/
 ├── constants/
 ├── data/
 ├── servers/
+├── schema/
+├── state/
 ├── vector_stores/ 
 └── app/           # Main application entry
