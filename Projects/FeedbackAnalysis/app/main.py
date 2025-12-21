@@ -20,7 +20,7 @@ def run_batch_processing():
         initial_state = {"current_item": item}
         
         # Run graph
-        output = app.invoke(initial_state) # type: ignore
+        output = app.invoke(initial_state)
         
         # Extract ticket
         if "final_ticket" in output:

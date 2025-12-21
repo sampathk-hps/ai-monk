@@ -7,6 +7,7 @@ AI-powered feedback analysis system that processes customer feedback from multip
 - AI-powered classification (Bug, Feature Request, Praise, Complaint, Spam)
 - Automated priority analysis and ticket generation
 - LangGraph workflow visualization
+- Interactive Streamlit web interface
 
 ## Setup
 
@@ -28,6 +29,11 @@ Result: `FeedbackAnalysis/results/feedback_graph.png`
 uv run python -m app.main
 ```
 Result: `FeedbackAnalysis/results/generated_tickets.csv`
+
+### Using streamlit application:
+```bash
+PYTHONPATH=. uv run streamlit run app/main_ui.py
+```
 
 ## Data Sources
 - `data/app_store_reviews.csv`

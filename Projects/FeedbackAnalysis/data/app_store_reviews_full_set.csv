@@ -1,0 +1,51 @@
+review_id,platform,rating,review_text,user_name,date,app_version
+SR001,Google Play,5,Promo promo promo!!!,user_1,2025-11-11,2.2.0
+SR002,App Store,3,Too many notifications,user_2,2025-12-19,2.5.1
+SR003,Google Play,2,Cart gets cleared automatically,user_3,2025-11-05,2.2.0
+SR004,Google Play,2,Prices are higher than website,user_4,2025-12-16,2.5.1
+SR005,App Store,2,Cart gets cleared automatically,user_5,2025-12-18,2.1.3
+SR006,App Store,2,Data sync not working for my orders,user_6,2025-12-04,2.1.3
+SR007,Google Play,2,App crashes when I try to checkout,user_7,2025-11-19,3.0.1
+SR008,Google Play,1,Prices are higher than website,user_8,2025-11-20,2.2.0
+SR009,App Store,4,Missing functionality to reorder past items,user_9,2025-11-15,3.0.0
+SR010,App Store,5,asdfghjkl,user_10,2025-11-22,3.0.0
+SR011,App Store,4,Would love to see order tracking improvements,user_11,2025-11-22,2.1.3
+SR012,App Store,4,Wish there was a wishlist feature,user_12,2025-11-10,3.0.1
+SR013,App Store,3,Wish there was a wishlist feature,user_13,2025-11-29,2.1.3
+SR014,App Store,3,Missing functionality to reorder past items,user_14,2025-12-06,2.5.1
+SR015,Google Play,5,Amazing app! Shopping is super easy,user_15,2025-11-15,3.0.0
+SR016,App Store,3,Too many notifications,user_16,2025-11-15,2.5.1
+SR017,App Store,5,Promo promo promo!!!,user_17,2025-12-07,2.1.3
+SR018,App Store,2,Cart gets cleared automatically,user_18,2025-12-15,2.5.1
+SR019,Google Play,4,Please add multiple address support,user_19,2025-11-25,2.2.0
+SR020,App Store,4,Promo promo promo!!!,user_20,2025-11-08,2.1.3
+SR021,Google Play,2,Can't login since update,user_21,2025-11-12,3.0.0
+SR022,Google Play,3,Too many notifications,user_22,2025-11-05,2.5.1
+SR023,App Store,5,UI is clean and very fast,user_23,2025-11-29,3.0.1
+SR024,Google Play,1,Promo promo promo!!!,user_24,2025-11-24,2.2.0
+SR025,Google Play,4,Wish there was a wishlist feature,user_25,2025-12-15,2.5.1
+SR026,Google Play,4,Please add dark mode,user_26,2025-12-20,2.2.0
+SR027,App Store,3,App is slow during sales,user_27,2025-11-15,2.1.3
+SR028,App Store,5,Promo promo promo!!!,user_28,2025-12-12,3.0.1
+SR029,App Store,5,Love the new feature for quick checkout,user_29,2025-12-04,2.2.0
+SR030,App Store,1,Prices are higher than website,user_30,2025-12-14,3.0.0
+SR031,Google Play,3,Missing functionality to reorder past items,user_31,2025-11-14,3.0.1
+SR032,Google Play,1,Too expensive delivery charges,user_32,2025-11-14,3.0.1
+SR033,Google Play,2,Too expensive delivery charges,user_33,2025-11-23,2.2.0
+SR034,Google Play,3,Missing functionality to reorder past items,user_34,2025-12-18,2.5.1
+SR035,App Store,1,App is slow during sales,user_35,2025-11-20,3.0.1
+SR036,App Store,4,Would love to see order tracking improvements,user_36,2025-11-10,3.0.1
+SR037,Google Play,1,App is slow during sales,user_37,2025-11-22,3.0.0
+SR038,App Store,1,Buy cheap products now!!!,user_38,2025-11-16,2.2.0
+SR039,App Store,4,Love the new feature for quick checkout,user_39,2025-11-17,3.0.1
+SR040,App Store,3,Too many notifications,user_40,2025-11-13,3.0.1
+SR041,Google Play,1,Data sync not working for my orders,user_41,2025-11-07,2.5.1
+SR042,App Store,4,Amazing app! Shopping is super easy,user_42,2025-11-16,2.2.0
+SR043,App Store,2,Data sync not working for my orders,user_43,2025-12-11,2.5.1
+SR044,App Store,1,App freezes on payment screen,user_44,2025-11-08,2.1.3
+SR045,App Store,2,Prices are higher than website,user_45,2025-12-07,2.2.0
+SR046,App Store,4,Would love to see order tracking improvements,user_46,2025-11-19,2.2.0
+SR047,Google Play,5,asdfghjkl,user_47,2025-11-29,2.2.0
+SR048,Google Play,4,UI is clean and very fast,user_48,2025-11-13,3.0.1
+SR049,Google Play,3,Please add multiple address support,user_49,2025-11-27,2.1.3
+SR050,App Store,5,UI is clean and very fast,user_50,2025-12-06,2.1.3
