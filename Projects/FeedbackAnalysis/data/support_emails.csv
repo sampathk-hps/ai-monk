@@ -1,0 +1,5 @@
+email_id,subject,body,sender_email,timestamp,priority
+SE001,Good Experience,Just wanted to say Shoppy is great. The delivery was fast and the UI is smooth.,user1@email.com,2025-11-10 03:14:58,Low
+SE002,Refund Delay,"I am using Shoppy on a Samsung Galaxy S22 running Android 14. The app crashes when I proceed to payment. Steps to reproduce: add item to cart, checkout.",user2@email.com,2025-12-17 05:52:58,High
+SE003,Suggestion for Improvement,Just wanted to say Shoppy is great. The delivery was fast and the UI is smooth.,user3@email.com,2025-12-06 13:06:58,
+SE005,General Feedback,"Hi, I would like to suggest adding a wishlist feature in Shoppy. It would improve the shopping experience a lot.",user5@email.com,2025-12-09 21:09:58,Low

@@ -1,0 +1,6 @@
+review_id,platform,rating,review_text,user_name,date,app_version
+SR001,Google Play,5,Promo promo promo!!!,user_1,2025-11-11,2.2.0
+SR002,App Store,3,Too many notifications,user_2,2025-12-19,2.5.1
+SR003,Google Play,2,Cart gets cleared automatically,user_3,2025-11-05,2.2.0
+SR004,Google Play,2,Prices are higher than website,user_4,2025-12-16,2.5.1
+SR005,App Store,2,Cart gets cleared automatically,user_5,2025-12-18,2.1.3
