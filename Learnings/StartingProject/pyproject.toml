@@ -10,3 +10,12 @@ dependencies = [
     "langchain-nvidia-ai-endpoints>=1.0.1",
     "python-dotenv>=1.2.1",
 ]
+
+[tool.uv]
+package = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+llm-test = "core.llm.client:_run"
