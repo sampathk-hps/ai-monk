@@ -31,6 +31,10 @@ def get_llm() -> BaseLLMProvider:
         )
     return _llm
 
+def get_llm_model():
+    """Get LLM model"""
+    return get_llm().get_model()
+
 def _run():
     try:
         llm = get_llm()

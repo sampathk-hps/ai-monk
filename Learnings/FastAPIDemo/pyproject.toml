@@ -9,6 +9,7 @@ dependencies = [
     "langchain-google-genai>=4.1.3",
     "langchain-nvidia-ai-endpoints>=1.0.1",
     "python-dotenv>=1.2.1",
+    "uvicorn>=0.40.0",
 ]
 
 [tool.uv]
@@ -19,3 +20,5 @@ where = ["src"]
 
 [project.scripts]
 llm-test = "core.llm.client:_run"
+weather-agent-test = "agents.weather_agent:_run"
+fastapi = "server.main:main"
