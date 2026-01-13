@@ -6,9 +6,9 @@ import uvicorn
 from server.endpoints import chat_router
 
 app = FastAPI(
-    title="PolicyGPT API",
+    title="FastAPI Demo",
     version="1.0.0",
-    description="Agentic AI HR Assistant API - Production Ready",
+    description="Demo project of FastAPI, Tool Calls and Deployment to HuggingFace",
     docs_url="/docs",
     redoc_url="/redoc"
 )

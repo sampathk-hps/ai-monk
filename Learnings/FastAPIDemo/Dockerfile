@@ -7,16 +7,16 @@ COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
 # Set the working directory
 WORKDIR /app
 
-# Copy dependency files first to leverage Docker caching
-COPY pyproject.toml uv.lock ./
+# Copy the entire project first (since it's a package)
+COPY . .
+
+# # Copy dependency files first to leverage Docker caching
+# COPY pyproject.toml uv.lock ./
 
 # Install dependencies
 # --system: Installs into the system python (avoids creating a venv inside Docker, which is simpler)
 # --deploy: Enforces that uv.lock is up to date
-RUN uv sync --frozen --no-cache
-
-# Copy the rest of your application code
-COPY . .
+RUN uv sync --frozen
 
 # Add src to Python path
 ENV PYTHONPATH=/app/src:/app
