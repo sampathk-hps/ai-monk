@@ -2,6 +2,9 @@ from fastapi import APIRouter
 from .models import ChatRequest, ChatResponse
 from agents import weather_agent
 
+from langchain_core.runnables.config import RunnableConfig
+from models.context import Context
+
 router = APIRouter()
 
 @router.post("/chat", response_model=ChatResponse)
@@ -11,11 +14,23 @@ async def chat_router(
     """
     Chat with the weather agent.
     """
-    result = weather_agent.invoke({"messages":[{"role":"user","content":request.message}]})
-    final_message = result["messages"][-1]
+
+    config: RunnableConfig = {
+        "configurable": {
+            "thread_id": request.thread_id
+        }
+    }
+
+    result = weather_agent.invoke(
+        {"messages":[{"role":"user","content":request.message}]},
+        config=config,
+        context=Context(user_id=request.user_id)
+    )
+    # final_message = result["messages"][-1]
     
     # Handle Gemini's list-style content
-    content = final_message.content
+
+    content = result['structured_response']
     if isinstance(content, list) and content:
         content = "".join(
             c.get("text", "") if isinstance(c, dict) else str(c) 
