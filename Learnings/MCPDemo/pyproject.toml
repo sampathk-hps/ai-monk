@@ -1,5 +1,5 @@
 [project]
-name = "demoproject"
+name = "mcpdemo"
 version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.13.9"
