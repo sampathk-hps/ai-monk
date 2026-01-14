@@ -3,7 +3,7 @@ from mcp.types import TextContent, TextResourceContents
 import asyncio
 
 async def async_main():
-    async with Client("server_local_stdio.py") as client:  # Loads main.py locally via STDIO
+    async with Client("http://127.0.0.1:8000/mcp") as client:  # Connects via HTTP URL
         # List available tools
         tools = await client.list_tools()
         print("Available tools:", tools)
