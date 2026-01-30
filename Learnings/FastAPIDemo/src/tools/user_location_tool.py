@@ -15,4 +15,9 @@ def get_user_location(runtime: ToolRuntime[Context] ) -> str:
 
     user_id = runtime.context.user_id
     # Simple rule: user_id "1" lives in Bangalore, others in Delhi.
-    return "Bangalore" if user_id == "1" else "Delhi"
+    location = "Delhi"
+    if user_id == "1":
+        location = "Bangalore"
+    elif user_id == "2":
+        location = "New York"
+    return location

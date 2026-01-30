@@ -1,4 +1,4 @@
-from server import mcp
+from src.server import mcp
 import src.tools  # Auto-registers all tools via @mcp.tool() decorators
 
 def main():

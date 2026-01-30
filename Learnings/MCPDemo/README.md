@@ -113,3 +113,29 @@ pip install fastmcp python-dotenv
 - Python >= 3.13.9
 - fastmcp >= 2.14.3
 - python-dotenv >= 1.2.1
+
+## FastMCP Concepts
+
+### Tools
+
+FastMCP tools are simple Python functions that you decorate with @mcp.tool. You can add as many as you like.
+
+### Resources
+
+Resources in MCP represent read-only data that clients can access. You can create static resources or dynamic templates that take parameters. For example, you might expose a version number or a user profile.
+
+### Using Context in Tools
+
+FastMCP allows you to access the session context within any tool, resource, or prompt by including a ctx: Context parameter. The context gives you powerful capabilities like logging, LLM sampling, progress tracking, and resource access.
+
+```python
+@mcp.tool
+async def summarize(uri: str, ctx: Context):
+    await ctx.info(f"Reading resource from {uri}")
+    data = await ctx.read_resource(uri)
+    summary = await ctx.sample(f"Summarize this: {data.content[:500]}")
+    return summary.text
+```
+
+This tool logs a message, reads a resource, and then asks the client's language model to summarise it. Context makes your MCP tools smarter and more interactive.
+This tool logs a message, reads a resource, and then asks the client’s language model to summarise it. Context makes your MCP tools smarter and more interactive.

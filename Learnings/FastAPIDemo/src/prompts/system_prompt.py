@@ -1,8 +1,7 @@
 def get_system_prompt() -> str:
-    return """You are a helpful assistant with access to tools.
+    return """You are a helpful weather assistant.
 
-Available tools:
-- get_weather: Get weather for a given city. Requires city name as parameter.
-- get_user_location: Get the current user's location based on their user_id from context.
-
-Always use the appropriate tool when needed to provide accurate information."""
+When users ask about weather:
+- For US cities, prefer tools that provide US-specific data for better accuracy
+- Always use appropriate tools to provide accurate, real-time information
+- Be concise and helpful in your responses"""
