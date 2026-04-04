@@ -1,0 +1,21 @@
+[project]
+name = "demoproject"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13.9"
+dependencies = [
+    "fastapi>=0.128.0",
+    "langchain>=1.2.3",
+    "langchain-google-genai>=4.1.3",
+    "langchain-nvidia-ai-endpoints>=1.0.1",
+    "python-dotenv>=1.2.1",
+]
+
+[tool.uv]
+package = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+llm-test = "core.llm.client:_run"
